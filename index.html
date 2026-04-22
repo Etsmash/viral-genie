@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viral Genie | Internet Trend Guessing Game</title>
+    <meta name="description" content="Think of a viral internet product and let the Viral Genie guess it! Uses real-time internet trend searching.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <header>
+            <h1 class="glow-text">Viral Genie</h1>
+            <p>I track the internet's latest obsessions.</p>
+        </header>
+
+        <main id="main-content">
+            <div id="mascot-container">
+                <img id="mascot" src="mascot.png" alt="AI Genie Mascot">
+            </div>
+
+            <!-- Start Screen -->
+            <div id="start-screen" class="screen active">
+                <div class="content-box">
+                    <h2>Think of a viral product...</h2>
+                    <p>Stanley Cups, Owala, Ninja CREAMi, or even TikTok trends.</p>
+                    <button id="start-btn" class="primary-btn">Let's Play</button>
+                    <!-- Status text will be injected here by game.js -->
+                </div>
+            </div>
+
+            <!-- Question Screen -->
+            <div id="question-screen" class="screen">
+                <div class="progress-bar-container">
+                    <div id="progress-bar" style="width: 0%;"></div>
+                </div>
+                <div class="content-box">
+                    <p id="question-count">Question #1</p>
+                    <h2 id="question-text">Is it a drink?</h2>
+                    <div class="options">
+                        <button class="option-btn" data-answer="1">Yes</button>
+                        <button class="option-btn" data-answer="0.5">Probably</button>
+                        <button class="option-btn" data-answer="0">I Don't Know</button>
+                        <button class="option-btn" data-answer="-0.5">Probably Not</button>
+                        <button class="option-btn" data-answer="-1">No</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Result Screen -->
+            <div id="result-screen" class="screen">
+                <div class="content-box">
+                    <h2>I think it's...</h2>
+                    <div id="guess-container">
+                        <img id="product-img" src="" alt="Guessed Product">
+                        <h1 id="product-name">Product Name</h1>
+                    </div>
+                    <div class="game-over-btns">
+                        <button id="restart-btn" class="primary-btn">Play Again</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Built with ❤️ by Antigravity | Live on GitHub</p>
+        </footer>
+    </div>
+    <script type="module" src="game.js"></script>
+</body>
+</html>

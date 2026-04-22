@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Oatzempic (Viral Trend)",
+        "image": "https://images.unsplash.com/photo-1501746734259-29b99f4c30c2?auto=format&fit=crop&q=80&w=400",
+        "traits": {
+            "holdsWater": 1,
+            "isDrink": 1,
+            "isToy": -1,
+            "isKitchen": 1,
+            "expensive": -1,
+            "pre2020": -1,
+            "madeOfSilicone": -1,
+            "wornOnFeet": -1,
+            "isSoft": -1,
+            "forCleaning": -1,
+            "isElectronic": -1,
+            "isBeauty": -1,
+            "wornOnHead": -1,
+            "forSleep": -1,
+            "forExercise": 1
+        }
+    },
+    {
+        "name": "Sleepy Girl Mocktail",
+        "image": "https://images.unsplash.com/photo-1544145945-f904253db0ad?auto=format&fit=crop&q=80&w=400",
+        "traits": {
+            "holdsWater": 1,
+            "isDrink": 1,
+            "isToy": -1,
+            "isKitchen": 1,
+            "expensive": -1,
+            "pre2020": -1,
+            "madeOfSilicone": -1,
+            "wornOnFeet": -1,
+            "isSoft": -1,
+            "forCleaning": -1,
+            "isElectronic": -1,
+            "isBeauty": -1,
+            "wornOnHead": -1,
+            "forSleep": 1,
+            "forExercise": -1
+        }
+    }
+]
